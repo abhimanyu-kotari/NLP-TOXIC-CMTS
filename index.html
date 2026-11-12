@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toxic Comment Classification NLP | RV University</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/design.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- Top HUD Navigation -->
+  <header id="hud-top">
+    <div class="hud-left">
+      <div class="hud-brand">
+        <span class="hud-logo">◈</span>
+        <span class="hud-label">Toxic Comment Detection <em>· Natural Language Processing</em></span>
+      </div>
+    </div>
+
+    <div class="hud-center">
+      <div id="slide-dots"></div>
+    </div>
+
+    <div class="hud-right">
+      <button id="btn-overview" class="hud-btn">⊞ Overview</button>
+      <button id="btn-fs" class="hud-btn icon-btn" title="Fullscreen">⛶</button>
+    </div>
+  </header>
+
+  <!-- Main Slide Stage -->
+  <main id="stage"></main>
+
+  <!-- Bottom Navigation HUD -->
+  <footer id="hud-bottom">
+    <button id="btn-prev" class="nav-pill" disabled>
+      <span class="nav-arrow">←</span>
+      <span class="nav-text">Prev</span>
+    </button>
+    <div class="slide-counter">
+      <span id="slide-num">01</span><span class="counter-sep">/</span><span id="slide-total">08</span>
+    </div>
+    <button id="btn-next" class="nav-pill primary">
+      <span class="nav-text">Next</span>
+      <span class="nav-arrow">→</span>
+    </button>
+  </footer>
+
+</div>
+
+<!-- Overview Modal -->
+<div id="overview-modal">
+  <div class="ov-backdrop"></div>
+  <div class="ov-panel">
+    <div class="ov-header">
+      <div>
+        <span class="ov-badge">NAVIGATION MATRIX</span>
+        <h2>Toxic Comment Classification · All Slides</h2>
+      </div>
+      <button id="btn-ov-close">✕</button>
+    </div>
+    <div id="ov-grid"></div>
+  </div>
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
